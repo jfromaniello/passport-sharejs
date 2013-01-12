@@ -1,12 +1,15 @@
 {
   "name": "passport-sharejs",
   "version": "0.0.1",
-  "description": "a ShareJS callback to validate users with passport.js",
+  "description": "Use passport.js user profile from session to authorize operations on Share.js documents.",
   "main": "lib/authenticate.js",
   "scripts": {
     "test": "mocha test --require should"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfromaniello/passport-sharejs.git"
+  },
   "keywords": [
     "passport",
     "sharejs"
