@@ -34,9 +34,11 @@ Use [passport.js](http://passportjs.org/) user profile from session to authorize
   });
 ~~~
 
-## Authorization with passportSharejs(sessionOptions, [callback])
+## Authorization with passportSharejs(sessionOptions, [actions], [callback])
 
-Callback is a function that accepts 4 parameters (err, agent, action, user). It is optional and the default value is to accept any operation from any authentication user and reject all operations from anonymous users.
+```actions``` is an optional array of the [actions names](https://github.com/josephg/ShareJS/wiki/User-access-control) we want to enforce authentication. The default value is ```['open']```. 
+
+```callback``` is a function that accepts 4 parameters (err, agent, action, user). It is optional and the default value is to accept any operation from any authentication user and reject all operations from anonymous users.
 
 You can use this callback to create an authorization function:
 

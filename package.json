@@ -1,6 +1,6 @@
 {
   "name": "passport-sharejs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Use passport.js user profile from session to authorize operations on Share.js documents.",
   "main": "lib/authenticate.js",
   "scripts": {
